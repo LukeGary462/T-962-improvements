@@ -5,6 +5,8 @@ typedef float FloatType;
 //typedef double floatType;
 #include <stdbool.h>
 
+#define SAMPLE_TIME 100
+
 //Constants used in some of the functions below
 typedef enum
 {

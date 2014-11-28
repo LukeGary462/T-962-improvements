@@ -25,7 +25,7 @@ void PID_init(PidType* pid, FloatType Kp, FloatType Ki, FloatType Kd,
   PID_SetOutputLimits(pid, 0, 0xffff);
 
   //default Controller Sample Time is 0.1 seconds
-  pid->SampleTime = 100;
+  pid->SampleTime = SAMPLE_TIME;
 
   PID_SetControllerDirection(pid, ControllerDirection);
   PID_SetTunings(pid, Kp, Ki, Kd);
